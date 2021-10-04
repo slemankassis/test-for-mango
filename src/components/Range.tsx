@@ -1,17 +1,78 @@
 import React, { FC, useEffect, useState, useRef } from 'react';
 import InvisibleInput from './InvisibleInput/InvisibleInput';
+import styled from 'styled-components';
 import RangeControl from './RangeControl';
-import { generatePercentages } from '../misc/utils/value-percent-generator';
-import { RangeValue } from '../misc/models/RangeValue';
-import {
-  closestRangeValueByPercentage,
-  closestRangeValueByValue,
-} from '../misc/utils/closestRangeValue';
 
 enum RangeControls {
   MIN,
   MAX,
 }
+
+export interface RangeValue {
+  value: number;
+  percent: number;
+}
+
+export function closestRangeValueByPercentage(
+  percentage: number,
+  rangeValues: RangeValue[],
+): RangeValue {
+  return rangeValues.reduce((prev, curr) => {
+    return Math.abs(curr.percent - percentage) < Math.abs(prev.percent - percentage)
+      ? curr
+      : prev;
+  });
+}
+
+export function closestRangeValueByValue(
+  value: number,
+  rangeValues: RangeValue[],
+): RangeValue {
+  return rangeValues.reduce((prev, curr) => {
+    return Math.abs(curr.value - value) < Math.abs(prev.value - value) ? curr : prev;
+  });
+}
+
+export function generatePercentages(arr: number[]): RangeValue[] {
+  const sortedArr = arr.sort((a, b) => a - b);
+
+  const mul = 100 / (sortedArr[sortedArr.length - 1] - sortedArr[0]);
+  return sortedArr.map((value) => {
+    return {
+      value,
+      percent: (value - sortedArr[0]) * mul,
+    };
+  });
+}
+
+const RangeStyles = styled.div`
+  .range {
+    display: flex;
+    user-select: none;
+
+    &__bar {
+      flex-grow: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__control {
+        position: absolute;
+      }
+
+      &__rail {
+        border-radius: 5px;
+        height: 5px;
+        background-color: #000;
+      }
+    }
+
+    &__boundaries {
+      max-width: 100%;
+    }
+  }
+`;
 
 interface RangeProps {
   options: number[] | { min: number; max: number };
@@ -195,51 +256,55 @@ const Range: FC<RangeProps> = ({ options, value, onChange }) => {
   };
 
   return (
-    <>
-      <InvisibleInput value={val.min} onChange={(ev) => console.log(ev)} />
-      <div
-        className="range__bar"
-        ref={rangeBarRef}
-        onMouseMove={(ev) => {
-          onMoving(ev);
-        }}
-        onTouchMove={(ev) => {
-          onMoving(ev);
-        }}
-        onMouseUp={onStopMoving}
-        onTouchEnd={onStopMoving}
-        onTouchCancel={onStopMoving}
-      >
-        <RangeControl
-          onMouseDown={() => {
-            onStartMoving(RangeControls.MIN);
+    <RangeStyles>
+      <div className="range">
+        <InvisibleInput value={val.min} onChange={(ev) => console.log(ev)} />
+        <div
+          className="range__bar"
+          ref={rangeBarRef}
+          onMouseMove={(ev) => {
+            onMoving(ev);
           }}
-          onTouchStart={() => {
-            onStartMoving(RangeControls.MIN);
+          onTouchMove={(ev) => {
+            onMoving(ev);
           }}
-          className="range__bar__control m-min"
-          style={{
-            zIndex: rangeState.lastActiveControl === RangeControls.MIN ? 1 : 0,
-            left: `${rangeState.minPos}%`,
-          }}
-        />
+          onMouseUp={onStopMoving}
+          onTouchEnd={onStopMoving}
+          onTouchCancel={onStopMoving}
+        >
+          <RangeControl
+            onMouseDown={() => {
+              onStartMoving(RangeControls.MIN);
+            }}
+            onTouchStart={() => {
+              onStartMoving(RangeControls.MIN);
+            }}
+            className="range__bar__control m-min"
+            style={{
+              zIndex: rangeState.lastActiveControl === RangeControls.MIN ? 1 : 0,
+              left: `${rangeState.minPos}%`,
+            }}
+          />
 
-        <RangeControl
-          onMouseDown={() => {
-            onStartMoving(RangeControls.MAX);
-          }}
-          onTouchStart={() => {
-            onStartMoving(RangeControls.MAX);
-          }}
-          className="range__bar__control m-max"
-          style={{
-            zIndex: rangeState.lastActiveControl === RangeControls.MAX ? 1 : 0,
-            left: `${rangeState.maxPos}%`,
-          }}
-        />
+          <RangeControl
+            onMouseDown={() => {
+              onStartMoving(RangeControls.MAX);
+            }}
+            onTouchStart={() => {
+              onStartMoving(RangeControls.MAX);
+            }}
+            className="range__bar__control m-max"
+            style={{
+              zIndex: rangeState.lastActiveControl === RangeControls.MAX ? 1 : 0,
+              left: `${rangeState.maxPos}%`,
+            }}
+          />
+
+          <div className="range__bar__rail"></div>
+        </div>
+        <InvisibleInput value={val.max} onChange={(ev) => console.log(ev)} />
       </div>
-      <InvisibleInput value={val.max} onChange={(ev) => console.log(ev)} />
-    </>
+    </RangeStyles>
   );
 };
 
