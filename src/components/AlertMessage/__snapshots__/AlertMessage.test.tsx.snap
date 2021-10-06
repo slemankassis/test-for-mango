@@ -6,7 +6,7 @@ exports[`snapshots AlertMessage snapshot empty info match 1`] = `null`;
 
 exports[`snapshots AlertMessage snapshot full error match 1`] = `
 <div
-  className="sc-bdfBQB gYcZyP m-error"
+  className="makeStyles-error-5"
 >
   Test
 </div>
@@ -14,7 +14,7 @@ exports[`snapshots AlertMessage snapshot full error match 1`] = `
 
 exports[`snapshots AlertMessage snapshot full error match 2`] = `
 <div
-  className="sc-bdfBQB gYcZyP m-info"
+  className="makeStyles-info-6"
 >
   Test
 </div>

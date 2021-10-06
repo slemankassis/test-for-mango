@@ -1,20 +1,16 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import classnames from 'classnames';
+import { makeStyles } from '@mui/styles';
 
-const ColorBox = styled.div`
-  color: #fff;
-  padding: 0.5em 0.5em 0.3em;
-
-  &.m-error {
-    background-color: #ff4444;
-    box-shadow: 0 8px #cc0000;
-  }
-
-  &.m-info {
-    background-color: #33b5e5;
-    box-shadow: 0 8px #0099cc;
-  }
-`;
+// Version with Material UI instead of styled-components
+const useStyles = makeStyles({
+  alert: { color: '#fff', padding: '0.5em 0.5em 0.3em' },
+  error: { backgroundColor: '#ff4444', boxShadow: '0 8px #cc0000' },
+  info: {
+    backgroundColor: '#33b5e5',
+    boxShadow: '0 8px #0099cc',
+  },
+});
 
 enum AlertMessageType {
   error = 'm-error',
@@ -26,8 +22,12 @@ export interface AlertMessageProps {
 }
 
 const AlertMessage: FC<AlertMessageProps> = ({ children, type }) => {
+  const classes = useStyles();
+
   if (children) {
-    return <ColorBox className={AlertMessageType[type]}>{children}</ColorBox>;
+    return (
+      <div className={classnames(alert, classes[type])}>{children}</div>
+    );
   } else {
     return null;
   }

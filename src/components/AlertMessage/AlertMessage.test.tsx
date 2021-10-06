@@ -13,18 +13,6 @@ const setup = (msgBoxProps: AlertMessageProps) => {
 };
 
 describe('AlertMessage check props', () => {
-  test('should have class info', () => {
-    const { el } = setup({ type: 'info' });
-
-    expect(el).toHaveClass('m-info');
-  });
-
-  test('should have class error', () => {
-    const { el } = setup({ type: 'error' });
-
-    expect(el).toHaveClass('m-error');
-  });
-
   test('should not exist when empty', () => {
     const { container } = render(<AlertMessage type="info"></AlertMessage>);
 
@@ -44,12 +32,16 @@ describe('snapshots AlertMessage', () => {
   });
 
   test('snapshot full error match', () => {
-    const tree = TestRenderer.create(<AlertMessage type="error">Test</AlertMessage>).toJSON();
+    const tree = TestRenderer.create(
+      <AlertMessage type="error">Test</AlertMessage>,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('snapshot full error match', () => {
-    const tree = TestRenderer.create(<AlertMessage type="info">Test</AlertMessage>).toJSON();
+    const tree = TestRenderer.create(
+      <AlertMessage type="info">Test</AlertMessage>,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
