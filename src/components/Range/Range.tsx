@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState, useRef } from 'react';
-import InvisibleInput from '../InvisibleInput/InvisibleInput';
+import HiddenInput from '../HiddenInput/HiddenInput';
 import styled from 'styled-components';
 import { generatePercentages } from '../../misc/helpers';
 import { RangeValue } from '../../misc/models/RangeValue';
@@ -371,7 +371,7 @@ const Range: FC<RangeProps> = ({ options, value, onChange, unit, disabled }) => 
         onTouchCancel={onStopMoving}
         aria-label="range-selector"
       >
-        <InvisibleInput
+        <HiddenInput
           value={rangeState.minVal}
           onChange={handleTextInputMin}
           unit={unit}
@@ -412,7 +412,7 @@ const Range: FC<RangeProps> = ({ options, value, onChange, unit, disabled }) => 
           <div className="range__bar__rail"></div>
         </div>
 
-        <InvisibleInput
+        <HiddenInput
           value={rangeState.maxVal}
           onChange={handleTextInputMax}
           unit={unit}

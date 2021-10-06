@@ -1,7 +1,7 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
 import TestRenderer from 'react-test-renderer';
-import InvisibleInput from './InvisibleInput';
+import HiddenInput from './HiddenInput';
 import userEvent from '@testing-library/user-event';
 import { CURRENCY_SYMBOL } from '../../misc/constants';
 
@@ -9,7 +9,7 @@ afterEach(cleanup);
 
 const setup = () => {
   const utils = render(
-    <InvisibleInput value={100} unit={CURRENCY_SYMBOL} ariaLabel="test input" />,
+    <HiddenInput value={100} unit={CURRENCY_SYMBOL} ariaLabel="test input" />,
   );
   const input = utils.getByLabelText('test input');
   return {
@@ -18,7 +18,7 @@ const setup = () => {
   };
 };
 
-describe('InvisibleInput operations', () => {
+describe('HiddenInput operations', () => {
   test('should show the value', () => {
     const { getByDisplayValue } = setup();
 
@@ -31,12 +31,12 @@ describe('InvisibleInput operations', () => {
     expect(getByText(/€/i).textContent).toBe('€');
   });
 
-  test('should user can clear the input', () => {
-    const { input } = setup();
+  test('should be disabled', () => {
+    const { getByLabelText } = render(
+      <HiddenInput value={100} unit="€" ariaLabel="test input" disabled={true} />,
+    );
 
-    userEvent.clear(input);
-
-    expect(input).toHaveValue(null);
+    expect(getByLabelText('test input')).toBeDisabled();
   });
 
   test('should allow numbers', () => {
@@ -63,7 +63,7 @@ describe('InvisibleInput operations', () => {
     userEvent.clear(input);
     userEvent.type(input, '12');
 
-    rerender(<InvisibleInput value={999} ariaLabel="test input" />);
+    rerender(<HiddenInput value={999} ariaLabel="test input" />);
 
     expect(input).toHaveValue(999);
   });
@@ -74,23 +74,23 @@ describe('InvisibleInput operations', () => {
     userEvent.clear(input);
     userEvent.type(input, '12');
 
-    rerender(<InvisibleInput value={100} ariaLabel="test input" />);
+    rerender(<HiddenInput value={100} ariaLabel="test input" />);
 
     expect(input).toHaveValue(12);
   });
 
-  test('should be disabled', () => {
-    const { getByLabelText } = render(
-      <InvisibleInput value={100} unit="€" ariaLabel="test input" disabled={true} />,
-    );
+  test('should user can clear the input', () => {
+    const { input } = setup();
 
-    expect(getByLabelText('test input')).toBeDisabled();
+    userEvent.clear(input);
+
+    expect(input).toHaveValue(null);
   });
 });
 
-describe('InvisibleInput snapshots', () => {
+describe('HiddenInput snapshots', () => {
   test('snapshot match', () => {
-    const tree = TestRenderer.create(<InvisibleInput value={100} />).toJSON();
+    const tree = TestRenderer.create(<HiddenInput value={100} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

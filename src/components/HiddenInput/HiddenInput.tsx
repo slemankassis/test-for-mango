@@ -1,7 +1,7 @@
 import React, { FC, FocusEvent, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const InvisibleInputContainer = styled.div`
+const HiddenInputContainer = styled.div`
   .span-input {
     border: none;
     display: inline;
@@ -32,7 +32,7 @@ const InvisibleInputContainer = styled.div`
   }
 `;
 
-export interface InvisibleInputProps {
+export interface HiddenInputProps {
   value: number;
   unit?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -40,7 +40,7 @@ export interface InvisibleInputProps {
   ariaLabel?: string;
 }
 
-const InvisibleInput: FC<InvisibleInputProps> = ({
+const HiddenInput: FC<HiddenInputProps> = ({
   value,
   unit,
   onChange,
@@ -68,7 +68,7 @@ const InvisibleInput: FC<InvisibleInputProps> = ({
   };
 
   return (
-    <InvisibleInputContainer>
+    <HiddenInputContainer>
       <input
         className="span-input"
         type="number"
@@ -82,8 +82,8 @@ const InvisibleInput: FC<InvisibleInputProps> = ({
         disabled={disabled}
       ></input>
       <span>{unit}</span>
-    </InvisibleInputContainer>
+    </HiddenInputContainer>
   );
 };
 
-export default InvisibleInput;
+export default HiddenInput;
