@@ -1,9 +1,10 @@
 import React, { FC, useEffect, useState, useRef } from 'react';
-import HiddenInput from '../HiddenInput/HiddenInput';
 import styled from 'styled-components';
+import HiddenInput from '../HiddenInput/HiddenInput';
+
 import { generatePercentages } from '../../misc/helpers';
 import { RangeValue } from '../../misc/models/RangeValue';
-import { MinMax } from '../../misc/models/MinMax';
+import { MinAndMax } from '../../misc/models/MinAndMax';
 import {
   closestRangeValueByPercentage,
   closestRangeValueByValue,
@@ -101,9 +102,9 @@ const RangeControl = styled.div`
 `;
 
 export interface RangeProps {
-  options?: number[] | MinMax;
-  value?: MinMax;
-  onChange?: (e: MinMax) => void;
+  options?: number[] | MinAndMax;
+  value?: MinAndMax;
+  onChange?: (e: MinAndMax) => void;
   unit?: string;
   disabled?: boolean;
 }
@@ -303,7 +304,7 @@ const Range: FC<RangeProps> = ({ options, value, onChange, unit, disabled }) => 
 
   useEvent('mouseup', onStopMoving);
 
-  const emitValue = (val: MinMax) => {
+  const emitValue = (val: MinAndMax) => {
     if (onChange) {
       onChange(val);
     }

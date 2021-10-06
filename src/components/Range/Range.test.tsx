@@ -26,7 +26,7 @@ describe('Range snapshots', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('snapshot MinMax range match', () => {
+  test('snapshot MinAndMax range match', () => {
     const tree = TestRenderer.create(
       <Range value={{ min: 15, max: 89 }} options={{ min: 1, max: 100 }} />,
     ).toJSON();
@@ -62,7 +62,7 @@ describe('Range props', () => {
     expect(maxInput).toHaveValue(70);
   });
 
-  test('should choose max and min correctly in reversed MinMax', () => {
+  test('should choose max and min correctly in reversed MinAndMax', () => {
     const { maxInput, minInput } = setup({
       options: { min: 100, max: 1 },
       value: undefined,

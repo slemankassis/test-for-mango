@@ -1,3 +1,3 @@
 export interface Exercise2Values {
-  values: number[];
+  rangeValues: number[];
 }

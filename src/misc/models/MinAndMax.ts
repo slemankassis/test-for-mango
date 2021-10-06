@@ -1,4 +1,4 @@
-export interface MinMax {
+export interface MinAndMax {
   min: number;
   max: number;
 }

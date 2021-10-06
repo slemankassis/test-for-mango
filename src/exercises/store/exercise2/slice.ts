@@ -54,7 +54,7 @@ export const loadExercise2Options =
       .then((response) => {
         return dispatch(
           loadExercise2OptionsSuccess({
-            options: response.data.values,
+            options: response.data.rangeValues,
           }),
         );
       })

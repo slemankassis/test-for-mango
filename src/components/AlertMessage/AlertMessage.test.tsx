@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import TestRenderer from 'react-test-renderer';
-import MsgBox, { MsgBoxProps } from './MsgBox';
+import AlertMessage, { AlertMessageProps } from './AlertMessage';
 
-const setup = (msgBoxProps: MsgBoxProps) => {
-  const utils = render(<MsgBox {...msgBoxProps}>test</MsgBox>);
+const setup = (msgBoxProps: AlertMessageProps) => {
+  const utils = render(<AlertMessage {...msgBoxProps}>test</AlertMessage>);
 
   return {
     el: utils.getByText('test'),
@@ -12,7 +12,7 @@ const setup = (msgBoxProps: MsgBoxProps) => {
   };
 };
 
-describe('MsgBox check props', () => {
+describe('AlertMessage check props', () => {
   test('should have class info', () => {
     const { el } = setup({ type: 'info' });
 
@@ -26,30 +26,30 @@ describe('MsgBox check props', () => {
   });
 
   test('should not exist when empty', () => {
-    const { container } = render(<MsgBox type="info"></MsgBox>);
+    const { container } = render(<AlertMessage type="info"></AlertMessage>);
 
     expect(container.firstChild).toBe(null);
   });
 });
 
-describe('snapshots MsgBox', () => {
+describe('snapshots AlertMessage', () => {
   test('snapshot empty error match', () => {
-    const tree = TestRenderer.create(<MsgBox type="error" />).toJSON();
+    const tree = TestRenderer.create(<AlertMessage type="error" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('snapshot empty info match', () => {
-    const tree = TestRenderer.create(<MsgBox type="info" />).toJSON();
+    const tree = TestRenderer.create(<AlertMessage type="info" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('snapshot full error match', () => {
-    const tree = TestRenderer.create(<MsgBox type="error">Test</MsgBox>).toJSON();
+    const tree = TestRenderer.create(<AlertMessage type="error">Test</AlertMessage>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('snapshot full error match', () => {
-    const tree = TestRenderer.create(<MsgBox type="info">Test</MsgBox>).toJSON();
+    const tree = TestRenderer.create(<AlertMessage type="info">Test</AlertMessage>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

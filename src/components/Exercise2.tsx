@@ -1,11 +1,12 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { MinMax } from '../misc/models/MinMax';
-import MsgBox from '../components/MsgBox/MsgBox';
-import Range from '../components/Range/Range';
-import { getExercise2State } from '../exercises/store/exercise2/exercise2.selectors';
-import { loadExercise2Options } from '../exercises/store/exercise2/exercise2.slice';
+
+import { MinAndMax } from '../misc/models/MinAndMax';
 import { CURRENCY_SYMBOL } from '../misc/constants';
+import AlertMessage from '../components/AlertMessage/AlertMessage';
+import Range from '../components/Range/Range';
+import { getExercise2State } from '../exercises/store/exercise2/selectors';
+import { loadExercise2Options } from '../exercises/store/exercise2/slice';
 
 const Exercise2: FC = () => {
   const [rangeSelected, setRangeSelected] = useState<{
@@ -13,7 +14,7 @@ const Exercise2: FC = () => {
     max: number;
   }>();
 
-  const onChangeHandler = (ev: MinMax) => {
+  const onChangeHandler = (ev: MinAndMax) => {
     setRangeSelected(ev);
   };
 
@@ -27,9 +28,9 @@ const Exercise2: FC = () => {
 
   return (
     <div className="exercise2">
-      <h1>Exercise 2</h1>
-      <MsgBox type="error">{exercise2State.error}</MsgBox>
-      <MsgBox type="info">{exercise2State.isLoading ? 'Loading...' : null}</MsgBox>
+      <span>Exercise 2</span>
+      <AlertMessage type="error">{exercise2State.error}</AlertMessage>
+      <AlertMessage type="info">{exercise2State.isLoading ? 'Loading...' : null}</AlertMessage>
       <Range
         options={exercise2State.options}
         value={rangeSelected}

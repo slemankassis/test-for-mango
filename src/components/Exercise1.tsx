@@ -1,9 +1,10 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
 import Range from '../components/Range/Range';
-import MsgBox from '../components/MsgBox/MsgBox';
-import { getExercise1State } from '../exercises/store/exercise1/exercise1.selectors';
-import { loadExercise1Options } from '../exercises/store/exercise1/exercise1.slice';
+import AlertMessage from '../components/AlertMessage/AlertMessage';
+import { getExercise1State } from '../exercises/store/exercise1/selectors';
+import { loadExercise1Options } from '../exercises/store/exercise1/slice';
 import { CURRENCY_SYMBOL } from '../misc/constants';
 
 const Exercise1: FC = () => {
@@ -26,7 +27,7 @@ const Exercise1: FC = () => {
 
   return (
     <div className="exercise1">
-      <h1>Exercise 1</h1>
+      <span>Exercise 1</span>
       <Range
         options={exercise1State.options}
         value={rangeSelected}
@@ -34,8 +35,8 @@ const Exercise1: FC = () => {
         unit={CURRENCY_SYMBOL}
       />
 
-      <MsgBox type="error">{exercise1State.error}</MsgBox>
-      <MsgBox type="info">{exercise1State.isLoading ? 'Loading...' : null}</MsgBox>
+      <AlertMessage type="error">{exercise1State.error}</AlertMessage>
+      <AlertMessage type="info">{exercise1State.isLoading ? 'Loading...' : null}</AlertMessage>
 
       {rangeSelected !== undefined && (
         <p>

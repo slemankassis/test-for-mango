@@ -16,21 +16,21 @@ const ColorBox = styled.div`
   }
 `;
 
-enum MsgBoxType {
+enum AlertMessageType {
   error = 'm-error',
   info = 'm-info',
 }
 
-export interface MsgBoxProps {
-  type: keyof typeof MsgBoxType;
+export interface AlertMessageProps {
+  type: keyof typeof AlertMessageType;
 }
 
-const MsgBox: FC<MsgBoxProps> = ({ children, type }) => {
+const AlertMessage: FC<AlertMessageProps> = ({ children, type }) => {
   if (children) {
-    return <ColorBox className={MsgBoxType[type]}>{children}</ColorBox>;
+    return <ColorBox className={AlertMessageType[type]}>{children}</ColorBox>;
   } else {
     return null;
   }
 };
 
-export default MsgBox;
+export default AlertMessage;

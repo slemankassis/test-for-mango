@@ -1,11 +1,11 @@
 import { AnyAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { UNKNOWN_ERROR } from '../../../misc/constants';
-import { MinMax } from '../../../misc/models/MinMax';
+import { MinAndMax } from '../../../misc/models/MinAndMax';
 import { AppThunk } from '../../../store/store';
 import MokableApi from '../../services/api';
 
 export interface ReposState {
-  options?: MinMax;
+  options?: MinAndMax;
   isLoading: boolean;
   error?: string;
 }
@@ -23,7 +23,7 @@ const exercise1Slice = createSlice({
     },
     loadExercise1OptionsSuccess(
       state,
-      { payload }: PayloadAction<{ options: MinMax }>,
+      { payload }: PayloadAction<{ options: MinAndMax }>,
     ) {
       state.isLoading = false;
       state.options = payload.options;
