@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { MinMax } from '../misc/models/MinMax';
-import MsgBox from '../ui/components/MsgBox/MsgBox';
-import Range from '../ui/components/Range/Range';
+import MsgBox from '../components/MsgBox/MsgBox';
+import Range from '../components/Range/Range';
 import { getExercise2State } from '../exercises/store/exercise2/exercise2.selectors';
 import { loadExercise2Options } from '../exercises/store/exercise2/exercise2.slice';
 

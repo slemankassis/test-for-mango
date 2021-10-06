@@ -1,9 +1,9 @@
 import React, { FC, useEffect, useState } from 'react';
-import Range from '../../../ui/components/range/Range';
+import Range from '../components/Range/Range';
+import MsgBox from '../components/MsgBox/MsgBox';
 import { useDispatch, useSelector } from 'react-redux';
-import { getExercise1State } from '../../store/exercise1/exercise1.selectors';
-import { loadExercise1Options } from '../../store/exercise1/exercise1.slice';
-import MsgBox from '../../../ui/components/MsgBox/MsgBox';
+import { getExercise1State } from '../exercises/store/exercise1/exercise1.selectors';
+import { loadExercise1Options } from '../exercises/store/exercise1/exercise1.slice';
 
 const Exercise1: FC = () => {
   const [rangeSelected, setRangeSelected] = useState<{

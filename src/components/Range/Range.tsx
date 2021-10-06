@@ -2,18 +2,31 @@ import React, { FC, useEffect, useState, useRef } from 'react';
 import InvisibleInput from '../InvisibleInput/InvisibleInput';
 import styled from 'styled-components';
 import RangeControl from '../RangeControl';
-import { generatePercentages } from '../../../misc/utils/value-percent-generator';
-import { RangeValue } from '../../../misc/models/RangeValue';
+import { generatePercentages } from '../../misc/helpers';
+import { RangeValue } from '../../misc/models/RangeValue';
 import {
   closestRangeValueByPercentage,
   closestRangeValueByValue,
-} from '../../../misc/utils/closestRangeValue';
-import useEvent from '../../hooks/useEvent';
-import { MinMax } from '../../../misc/models/MinMax';
+} from '../../misc/helpers';
+import { MinMax } from '../../misc/models/MinMax';
 
 enum RangeControls {
   MIN,
   MAX,
+}
+
+function useEvent<K extends keyof WindowEventMap>(
+  type: K,
+  listener: (this: Window, ev: WindowEventMap[K]) => any,
+  options: boolean | AddEventListenerOptions = false,
+): void {
+  useEffect(() => {
+    window.addEventListener(type, listener, options);
+
+    return function cleanup() {
+      window.removeEventListener(type, listener);
+    };
+  });
 }
 
 const RangeStyles = styled.div`
