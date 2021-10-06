@@ -8,8 +8,12 @@ export const store = configureStore({
 
 export type storeType = typeof store;
 
-const newRootReducer = require('./root-reducer').default;
-store.replaceReducer(newRootReducer);
+if (process.env.NODE_ENV === 'development' && module.hot) {
+  module.hot.accept('./root-reducer', () => {
+    const newRootReducer = require('./root-reducer').default;
+    store.replaceReducer(newRootReducer);
+  });
+}
 
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,

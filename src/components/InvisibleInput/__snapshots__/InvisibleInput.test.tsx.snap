@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvisibleInput snapshots snapshot match 1`] = `
+<div
+  className="sc-bdfBwQ jldiZV"
+>
+  <input
+    className="span-input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    style={
+      Object {
+        "width": "3ch",
+      }
+    }
+    type="number"
+    value="100"
+  />
+  <span />
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots MsgBox snapshot empty error match 1`] = `null`;
+
+exports[`snapshots MsgBox snapshot empty info match 1`] = `null`;
+
+exports[`snapshots MsgBox snapshot full error match 1`] = `
+<div
+  className="sc-bdfBwQ cjQMhH m-error"
+>
+  Test
+</div>
+`;
+
+exports[`snapshots MsgBox snapshot full error match 2`] = `
+<div
+  className="sc-bdfBwQ cjQMhH m-info"
+>
+  Test
+</div>
+`;

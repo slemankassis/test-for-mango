@@ -4,8 +4,8 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
-import Exercise2 from './demo/components/exercise2/Exercise2';
-import Exercise1 from './demo/components/exercise1/Exercise1';
+import Exercise1 from './components/Exercise1';
+import Exercise2 from './components/Exercise2';
 
 function App() {
   return (
@@ -22,7 +22,6 @@ function App() {
 
           <Route exact path="/exercise1" component={Exercise1} />
           <Route exact path="/exercise2" component={Exercise2} />
-
           <Route path="*" component={() => <span>404</span>} />
         </Switch>
       </BrowserRouter>

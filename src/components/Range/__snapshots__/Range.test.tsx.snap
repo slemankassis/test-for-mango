@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Range snapshots snapshot MinMax range match 1`] = `
+<div
+  className="sc-dlfnbm hztomj"
+>
+  <div
+    aria-label="range-selector"
+    className="range "
+    onMouseMove={[Function]}
+    onTouchCancel={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+  >
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input min"
+        className="span-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+    <div
+      className="range__bar"
+    >
+      <div
+        aria-label="range control min"
+        className="sc-gsTCUz iZEpnt range__bar__control m-min"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "14.141414141414142%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        aria-label="range control max"
+        className="sc-gsTCUz iZEpnt range__bar__control m-max"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "88.8888888888889%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        className="range__bar__rail"
+      />
+    </div>
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input max"
+        className="span-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Range snapshots snapshot Number[] range match 1`] = `
+<div
+  className="sc-dlfnbm hztomj"
+>
+  <div
+    aria-label="range-selector"
+    className="range "
+    onMouseMove={[Function]}
+    onTouchCancel={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+  >
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input min"
+        className="span-input"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+    <div
+      className="range__bar"
+    >
+      <div
+        aria-label="range control min"
+        className="sc-gsTCUz iZEpnt range__bar__control m-min"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "14.942528735632184%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        aria-label="range control max"
+        className="sc-gsTCUz iZEpnt range__bar__control m-max"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "100%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        className="range__bar__rail"
+      />
+    </div>
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input max"
+        className="span-input"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Range snapshots snapshot disabled range match 1`] = `
+<div
+  className="sc-dlfnbm hztomj"
+>
+  <div
+    aria-label="range-selector"
+    className="range m-disabled"
+    onMouseMove={[Function]}
+    onTouchCancel={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+  >
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input min"
+        className="span-input"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+    <div
+      className="range__bar"
+    >
+      <div
+        aria-label="range control min"
+        className="sc-gsTCUz iZEpnt range__bar__control m-min"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "0%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        aria-label="range control max"
+        className="sc-gsTCUz iZEpnt range__bar__control m-max"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "100%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        className="range__bar__rail"
+      />
+    </div>
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input max"
+        className="span-input"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Range snapshots snapshot empty range match 1`] = `
+<div
+  className="sc-dlfnbm hztomj"
+>
+  <div
+    aria-label="range-selector"
+    className="range "
+    onMouseMove={[Function]}
+    onTouchCancel={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+  >
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input min"
+        className="span-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+    <div
+      className="range__bar"
+    >
+      <div
+        aria-label="range control min"
+        className="sc-gsTCUz iZEpnt range__bar__control m-min"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "0%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        aria-label="range control max"
+        className="sc-gsTCUz iZEpnt range__bar__control m-max"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "100%",
+            "zIndex": 0,
+          }
+        }
+      />
+      <div
+        className="range__bar__rail"
+      />
+    </div>
+    <div
+      className="sc-bdfBwQ jldiZV"
+    >
+      <input
+        aria-label="range input max"
+        className="span-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "1ch",
+          }
+        }
+        type="number"
+        value="0"
+      />
+      <span />
+    </div>
+  </div>
+</div>
+`;
