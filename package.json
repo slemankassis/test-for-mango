@@ -31,7 +31,6 @@
     "build": "react-app-rewired build",
     "prettier": "npx prettier --write .",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
