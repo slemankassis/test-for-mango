@@ -25,9 +25,7 @@ const AlertMessage: FC<AlertMessageProps> = ({ children, type }) => {
   const classes = useStyles();
 
   if (children) {
-    return (
-      <div className={classnames(alert, classes[type])}>{children}</div>
-    );
+    return <div className={classnames(alert, classes[type])}>{children}</div>;
   } else {
     return null;
   }

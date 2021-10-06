@@ -11,6 +11,7 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+        // TODO: Github pages always shows 404. Fix it.
         <Switch>
           <Route exact path="/">
             <Redirect

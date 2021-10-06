@@ -30,7 +30,9 @@ const Exercise2: FC = () => {
     <div className="exercise2">
       <span>Exercise 2</span>
       <AlertMessage type="error">{exercise2State.error}</AlertMessage>
-      <AlertMessage type="info">{exercise2State.isLoading ? 'Loading...' : null}</AlertMessage>
+      <AlertMessage type="info">
+        {exercise2State.isLoading ? 'Loading...' : null}
+      </AlertMessage>
       <Range
         options={exercise2State.options}
         value={rangeSelected}

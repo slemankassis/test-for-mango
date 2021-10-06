@@ -42,8 +42,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Mock URL
 
 https://www.mockable.io/a/#/space/demo8192803/rest/QyEcw2AAA
+
 ## Next steps
 
-* Storybook
-* e2e tests
-* i18n plugin
+- Storybook
+- e2e tests
+- i18n plugin
+- Github pages always shows 404. Fix it. http://slemankassis.github.io/test-for-mango

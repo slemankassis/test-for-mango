@@ -36,7 +36,9 @@ const Exercise1: FC = () => {
       />
 
       <AlertMessage type="error">{exercise1State.error}</AlertMessage>
-      <AlertMessage type="info">{exercise1State.isLoading ? 'Loading...' : null}</AlertMessage>
+      <AlertMessage type="info">
+        {exercise1State.isLoading ? 'Loading...' : null}
+      </AlertMessage>
 
       {rangeSelected !== undefined && (
         <p>
