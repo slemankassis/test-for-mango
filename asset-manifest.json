@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/test-for-mango/static/css/main.8914190a.chunk.css",
+    "main.js": "/test-for-mango/static/js/main.0328ee8e.chunk.js",
+    "main.js.map": "/test-for-mango/static/js/main.0328ee8e.chunk.js.map",
+    "runtime-main.js": "/test-for-mango/static/js/runtime-main.c638598e.js",
+    "runtime-main.js.map": "/test-for-mango/static/js/runtime-main.c638598e.js.map",
+    "static/js/2.28907e98.chunk.js": "/test-for-mango/static/js/2.28907e98.chunk.js",
+    "static/js/2.28907e98.chunk.js.map": "/test-for-mango/static/js/2.28907e98.chunk.js.map",
+    "static/js/3.7673659d.chunk.js": "/test-for-mango/static/js/3.7673659d.chunk.js",
+    "static/js/3.7673659d.chunk.js.map": "/test-for-mango/static/js/3.7673659d.chunk.js.map",
+    "index.html": "/test-for-mango/index.html",
+    "precache-manifest.41dae8b844bb2da83e6d473ce48f6d6d.js": "/test-for-mango/precache-manifest.41dae8b844bb2da83e6d473ce48f6d6d.js",
+    "service-worker.js": "/test-for-mango/service-worker.js",
+    "static/css/main.8914190a.chunk.css.map": "/test-for-mango/static/css/main.8914190a.chunk.css.map",
+    "static/js/2.28907e98.chunk.js.LICENSE.txt": "/test-for-mango/static/js/2.28907e98.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c638598e.js",
+    "static/js/2.28907e98.chunk.js",
+    "static/css/main.8914190a.chunk.css",
+    "static/js/main.0328ee8e.chunk.js"
+  ]
+}
