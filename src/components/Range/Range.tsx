@@ -1,14 +1,13 @@
 import React, { FC, useEffect, useState, useRef } from 'react';
 import InvisibleInput from '../InvisibleInput/InvisibleInput';
 import styled from 'styled-components';
-import RangeControl from '../RangeControl';
 import { generatePercentages } from '../../misc/helpers';
 import { RangeValue } from '../../misc/models/RangeValue';
+import { MinMax } from '../../misc/models/MinMax';
 import {
   closestRangeValueByPercentage,
   closestRangeValueByValue,
 } from '../../misc/helpers';
-import { MinMax } from '../../misc/models/MinMax';
 
 enum RangeControls {
   MIN,
@@ -78,6 +77,26 @@ const RangeStyles = styled.div`
         background-color: #000;
       }
     }
+  }
+`;
+
+const RangeControl = styled.div`
+  cursor: grab;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 100%;
+  background-color: #000;
+  transform: translate(-50%, 0);
+  transition: width 0.25s, height 0.25s;
+  touch-action: none;
+
+  &:hover {
+    width: 2.25em;
+    height: 2.25em;
+  }
+
+  &:active {
+    cursor: grabbing;
   }
 `;
 

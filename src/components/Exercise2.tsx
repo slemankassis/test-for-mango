@@ -5,6 +5,7 @@ import MsgBox from '../components/MsgBox/MsgBox';
 import Range from '../components/Range/Range';
 import { getExercise2State } from '../exercises/store/exercise2/exercise2.selectors';
 import { loadExercise2Options } from '../exercises/store/exercise2/exercise2.slice';
+import { CURRENCY_SYMBOL } from '../misc/constants';
 
 const Exercise2: FC = () => {
   const [rangeSelected, setRangeSelected] = useState<{
@@ -33,7 +34,7 @@ const Exercise2: FC = () => {
         options={exercise2State.options}
         value={rangeSelected}
         onChange={onChangeHandler}
-        unit="€"
+        unit={CURRENCY_SYMBOL}
       />
 
       {rangeSelected !== undefined && (

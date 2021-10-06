@@ -3,12 +3,13 @@ import { cleanup, render } from '@testing-library/react';
 import TestRenderer from 'react-test-renderer';
 import InvisibleInput from './InvisibleInput';
 import userEvent from '@testing-library/user-event';
+import { CURRENCY_SYMBOL } from '../../misc/constants';
 
 afterEach(cleanup);
 
 const setup = () => {
   const utils = render(
-    <InvisibleInput value={100} unit="€" ariaLabel="test input" />,
+    <InvisibleInput value={100} unit={CURRENCY_SYMBOL} ariaLabel="test input" />,
   );
   const input = utils.getByLabelText('test input');
   return {

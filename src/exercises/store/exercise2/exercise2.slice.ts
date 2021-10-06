@@ -1,7 +1,7 @@
 import { AnyAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { UNKNOWN_ERROR } from '../../../misc/constants';
 import { AppThunk } from '../../../store/store';
-import MokableApi from '../../services/mokable-api';
+import MokableApi from '../../services/api';
 
 export interface ReposState {
   options?: number[];
