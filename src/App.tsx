@@ -23,7 +23,14 @@ function App() {
 
           <Route exact path="/exercise1" component={Exercise1} />
           <Route exact path="/exercise2" component={Exercise2} />
-          <Route path="*" component={() => <span>404</span>} />
+
+          <Route path="*">
+            <Redirect
+              to={{
+                pathname: '/exercise1',
+              }}
+            />
+          </Route>
         </Switch>
       </BrowserRouter>
     </Provider>
