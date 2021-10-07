@@ -50,7 +50,6 @@ https://www.mockable.io/a/#/space/demo8192803/rest
 
 - Storybook
 - e2e tests
-- i18n plugin
 - Github pages always shows 404. Fix it. http://slemankassis.github.io/test-for-mango https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c
 - Improve react-app-rewired configs. https://marmelab.com/blog/2021/07/22/cra-webpack-no-eject.html https://github.com/timarney/react-app-rewired
 - Fix deploy https://test-for-mang.vercel.app/
