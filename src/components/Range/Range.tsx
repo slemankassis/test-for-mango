@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import HiddenInput from '../HiddenInput/HiddenInput';
 
 import { generatePercentages } from '../../misc/helpers';
-import { RangeValue } from '../../misc/models/RangeValue';
-import { MinAndMax } from '../../misc/models/MinAndMax';
+import { RangeValue } from '../../models/RangeValue';
+import { MinAndMax } from '../../models/MinAndMax';
 import {
   closestRangeValueByPercentage,
   closestRangeValueByValue,

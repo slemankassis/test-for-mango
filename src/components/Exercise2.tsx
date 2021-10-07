@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { MinAndMax } from '../misc/models/MinAndMax';
+import { MinAndMax } from '../models/MinAndMax';
 import { CURRENCY_SYMBOL } from '../misc/constants';
 import AlertMessage from '../components/AlertMessage/AlertMessage';
 import Range from '../components/Range/Range';

@@ -8,12 +8,12 @@ import Exercise1 from './components/Exercise1';
 import Exercise2 from './components/Exercise2';
 
 function App() {
+  // TODO: Github pages always shows 404. Fix it.
   return (
     <Provider store={store}>
       <BrowserRouter>
-        // TODO: Github pages always shows 404. Fix it.
         <Switch>
-          <Route exact path="/">
+          <Route exact basename={`/${process.env.PUBLIC_URL}`} path="/">
             <Redirect
               to={{
                 pathname: '/exercise1',

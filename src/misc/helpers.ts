@@ -1,4 +1,4 @@
-import { RangeValue } from './models/RangeValue';
+import { RangeValue } from '../models/RangeValue';
 
 export function generatePercentages(arr: number[]): RangeValue[] {
   const sortedArr = [...arr].sort((a, b) => a - b);

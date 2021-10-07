@@ -39,9 +39,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Mock URL
+## Mock URL "mockable.io"
 
-https://www.mockable.io/a/#/space/demo8192803/rest/QyEcw2AAA
+https://www.mockable.io/a/#/space/demo8192803/rest
 
 ## Next steps
 
@@ -49,3 +49,4 @@ https://www.mockable.io/a/#/space/demo8192803/rest/QyEcw2AAA
 - e2e tests
 - i18n plugin
 - Github pages always shows 404. Fix it. http://slemankassis.github.io/test-for-mango
+- Improve react-app-rewired configs. https://marmelab.com/blog/2021/07/22/cra-webpack-no-eject.html https://github.com/timarney/react-app-rewired

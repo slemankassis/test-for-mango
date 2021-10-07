@@ -1,6 +1,6 @@
 import Axios, { AxiosInstance } from 'axios';
-import { MinAndMax } from '../../misc/models/MinAndMax';
-import { Exercise2Values } from '../models/Exercise2Response';
+import { MinAndMax } from '../../models/MinAndMax';
+import { Exercise2Values } from '../../models/Exercise2Response';
 
 class MockableService {
   api: AxiosInstance;

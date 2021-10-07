@@ -1,6 +1,6 @@
 import { AnyAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { UNKNOWN_ERROR } from '../../../misc/constants';
-import { MinAndMax } from '../../../misc/models/MinAndMax';
+import { MinAndMax } from '../../../models/MinAndMax';
 import { AppThunk } from '../../../store/store';
 import MokableApi from '../../services/api';
 
