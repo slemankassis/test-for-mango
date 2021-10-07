@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/test-for-mango/static/css/main.955cae85.chunk.css",
-    "main.js": "/test-for-mango/static/js/main.8a099e3d.chunk.js",
-    "main.js.map": "/test-for-mango/static/js/main.8a099e3d.chunk.js.map",
-    "runtime-main.js": "/test-for-mango/static/js/runtime-main.2e273738.js",
-    "runtime-main.js.map": "/test-for-mango/static/js/runtime-main.2e273738.js.map",
-    "static/js/2.34fe3b98.chunk.js": "/test-for-mango/static/js/2.34fe3b98.chunk.js",
-    "static/js/2.34fe3b98.chunk.js.map": "/test-for-mango/static/js/2.34fe3b98.chunk.js.map",
-    "static/js/3.c1a3a700.chunk.js": "/test-for-mango/static/js/3.c1a3a700.chunk.js",
-    "static/js/3.c1a3a700.chunk.js.map": "/test-for-mango/static/js/3.c1a3a700.chunk.js.map",
+    "main.js": "/test-for-mango/static/js/main.43d26c68.chunk.js",
+    "main.js.map": "/test-for-mango/static/js/main.43d26c68.chunk.js.map",
+    "runtime-main.js": "/test-for-mango/static/js/runtime-main.ceb9a087.js",
+    "runtime-main.js.map": "/test-for-mango/static/js/runtime-main.ceb9a087.js.map",
+    "static/js/2.deccbfd7.chunk.js": "/test-for-mango/static/js/2.deccbfd7.chunk.js",
+    "static/js/2.deccbfd7.chunk.js.map": "/test-for-mango/static/js/2.deccbfd7.chunk.js.map",
+    "static/js/3.74af35ff.chunk.js": "/test-for-mango/static/js/3.74af35ff.chunk.js",
+    "static/js/3.74af35ff.chunk.js.map": "/test-for-mango/static/js/3.74af35ff.chunk.js.map",
     "index.html": "/test-for-mango/index.html",
-    "precache-manifest.92dae74dfb15ee459e80623d4b7e9208.js": "/test-for-mango/precache-manifest.92dae74dfb15ee459e80623d4b7e9208.js",
+    "precache-manifest.2148eca38a886e426125b324c8e285bf.js": "/test-for-mango/precache-manifest.2148eca38a886e426125b324c8e285bf.js",
     "service-worker.js": "/test-for-mango/service-worker.js",
     "static/css/main.955cae85.chunk.css.map": "/test-for-mango/static/css/main.955cae85.chunk.css.map",
-    "static/js/2.34fe3b98.chunk.js.LICENSE.txt": "/test-for-mango/static/js/2.34fe3b98.chunk.js.LICENSE.txt"
+    "static/js/2.deccbfd7.chunk.js.LICENSE.txt": "/test-for-mango/static/js/2.deccbfd7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e273738.js",
-    "static/js/2.34fe3b98.chunk.js",
+    "static/js/runtime-main.ceb9a087.js",
+    "static/js/2.deccbfd7.chunk.js",
     "static/css/main.955cae85.chunk.css",
-    "static/js/main.8a099e3d.chunk.js"
+    "static/js/main.43d26c68.chunk.js"
   ]
 }
