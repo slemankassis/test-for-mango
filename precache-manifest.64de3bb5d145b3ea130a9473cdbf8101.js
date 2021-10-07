@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65be18a387dc36f8f8b11389c9bd264d",
+    "revision": "fca95cfd5c499c5a9b9e4feaa4374ebb",
     "url": "/test-for-mango/index.html"
   },
   {
-    "revision": "437231a6b868e2736a32",
+    "revision": "68f96bcaaa887451908f",
     "url": "/test-for-mango/static/css/main.39c5e9cf.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/test-for-mango/static/js/3.f3a77623.chunk.js"
   },
   {
-    "revision": "437231a6b868e2736a32",
-    "url": "/test-for-mango/static/js/main.5228240b.chunk.js"
+    "revision": "68f96bcaaa887451908f",
+    "url": "/test-for-mango/static/js/main.6eb4b264.chunk.js"
   },
   {
     "revision": "8de144d790558d92af5c",

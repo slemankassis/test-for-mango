@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/test-for-mango/static/css/main.39c5e9cf.chunk.css",
-    "main.js": "/test-for-mango/static/js/main.5228240b.chunk.js",
-    "main.js.map": "/test-for-mango/static/js/main.5228240b.chunk.js.map",
+    "main.js": "/test-for-mango/static/js/main.6eb4b264.chunk.js",
+    "main.js.map": "/test-for-mango/static/js/main.6eb4b264.chunk.js.map",
     "runtime-main.js": "/test-for-mango/static/js/runtime-main.3942ba13.js",
     "runtime-main.js.map": "/test-for-mango/static/js/runtime-main.3942ba13.js.map",
     "static/js/2.37b03819.chunk.js": "/test-for-mango/static/js/2.37b03819.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.f3a77623.chunk.js": "/test-for-mango/static/js/3.f3a77623.chunk.js",
     "static/js/3.f3a77623.chunk.js.map": "/test-for-mango/static/js/3.f3a77623.chunk.js.map",
     "index.html": "/test-for-mango/index.html",
-    "precache-manifest.72ca433f78ba89c54fb2fcf18a2f5967.js": "/test-for-mango/precache-manifest.72ca433f78ba89c54fb2fcf18a2f5967.js",
+    "precache-manifest.64de3bb5d145b3ea130a9473cdbf8101.js": "/test-for-mango/precache-manifest.64de3bb5d145b3ea130a9473cdbf8101.js",
     "service-worker.js": "/test-for-mango/service-worker.js",
     "static/css/main.39c5e9cf.chunk.css.map": "/test-for-mango/static/css/main.39c5e9cf.chunk.css.map",
     "static/js/2.37b03819.chunk.js.LICENSE.txt": "/test-for-mango/static/js/2.37b03819.chunk.js.LICENSE.txt"
@@ -19,6 +19,6 @@
     "static/js/runtime-main.3942ba13.js",
     "static/js/2.37b03819.chunk.js",
     "static/css/main.39c5e9cf.chunk.css",
-    "static/js/main.5228240b.chunk.js"
+    "static/js/main.6eb4b264.chunk.js"
   ]
 }
