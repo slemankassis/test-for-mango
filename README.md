@@ -26,6 +26,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Suggestions for IDE VSCode
+
+- https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3
+-
 
 ## Mock URL "mockable.io"
 
