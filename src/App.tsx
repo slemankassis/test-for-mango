@@ -8,12 +8,12 @@ import Exercise1 from './components/Exercise1';
 import Exercise2 from './components/Exercise2';
 
 function App() {
-  // TODO: Github pages always shows 404. Fix it.
+  // TODO: Github pages always shows 404. Fix it. https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c
   return (
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
-          <Route exact basename={`/${process.env.PUBLIC_URL}`} path="/">
+          <Route exact path="/">
             <Redirect
               to={{
                 pathname: '/exercise1',
@@ -23,14 +23,7 @@ function App() {
 
           <Route exact path="/exercise1" component={Exercise1} />
           <Route exact path="/exercise2" component={Exercise2} />
-
-          <Route path="*">
-            <Redirect
-              to={{
-                pathname: '/exercise1',
-              }}
-            />
-          </Route>
+          <Route path="*" component={() => <span>404</span>} />
         </Switch>
       </BrowserRouter>
     </Provider>
