@@ -47,6 +47,7 @@ https://www.mockable.io/a/#/space/demo8192803/rest
 ## NPM registry
 
 - Added .npmrc config because if not the yarn.lock or de package-lock.json will have values of other registry (Indeed.com my current work) and I couldn't deploy in other tools online like Vercel or Netlify
+- Use yarn because it performs better than npm
 
 ## Next steps
 
@@ -55,3 +56,4 @@ https://www.mockable.io/a/#/space/demo8192803/rest
 - i18n plugin
 - Github pages always shows 404. Fix it. http://slemankassis.github.io/test-for-mango https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c
 - Improve react-app-rewired configs. https://marmelab.com/blog/2021/07/22/cra-webpack-no-eject.html https://github.com/timarney/react-app-rewired
+- Fix deploy https://test-for-mang.vercel.app/
