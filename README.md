@@ -29,7 +29,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Suggestions for IDE VSCode
 
 - https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3
--
+-<img width="1792" alt="Screenshot 2021-10-07 at 1 29 45 PM" src="https://user-images.githubusercontent.com/5224903/136384876-1db05833-9aaa-42a8-a35d-27ba91236f43.png">
+
 
 ## Mock URL "mockable.io"
 
