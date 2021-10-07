@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/test-for-mango/static/css/main.8914190a.chunk.css",
-    "main.js": "/test-for-mango/static/js/main.387bd256.chunk.js",
-    "main.js.map": "/test-for-mango/static/js/main.387bd256.chunk.js.map",
-    "runtime-main.js": "/test-for-mango/static/js/runtime-main.c638598e.js",
-    "runtime-main.js.map": "/test-for-mango/static/js/runtime-main.c638598e.js.map",
-    "static/js/2.c84eb308.chunk.js": "/test-for-mango/static/js/2.c84eb308.chunk.js",
-    "static/js/2.c84eb308.chunk.js.map": "/test-for-mango/static/js/2.c84eb308.chunk.js.map",
-    "static/js/3.7673659d.chunk.js": "/test-for-mango/static/js/3.7673659d.chunk.js",
-    "static/js/3.7673659d.chunk.js.map": "/test-for-mango/static/js/3.7673659d.chunk.js.map",
+    "main.css": "/test-for-mango/static/css/main.39c5e9cf.chunk.css",
+    "main.js": "/test-for-mango/static/js/main.5228240b.chunk.js",
+    "main.js.map": "/test-for-mango/static/js/main.5228240b.chunk.js.map",
+    "runtime-main.js": "/test-for-mango/static/js/runtime-main.3942ba13.js",
+    "runtime-main.js.map": "/test-for-mango/static/js/runtime-main.3942ba13.js.map",
+    "static/js/2.37b03819.chunk.js": "/test-for-mango/static/js/2.37b03819.chunk.js",
+    "static/js/2.37b03819.chunk.js.map": "/test-for-mango/static/js/2.37b03819.chunk.js.map",
+    "static/js/3.f3a77623.chunk.js": "/test-for-mango/static/js/3.f3a77623.chunk.js",
+    "static/js/3.f3a77623.chunk.js.map": "/test-for-mango/static/js/3.f3a77623.chunk.js.map",
     "index.html": "/test-for-mango/index.html",
-    "precache-manifest.9e13055ef549eab8a0b7db8edbea41a4.js": "/test-for-mango/precache-manifest.9e13055ef549eab8a0b7db8edbea41a4.js",
+    "precache-manifest.72ca433f78ba89c54fb2fcf18a2f5967.js": "/test-for-mango/precache-manifest.72ca433f78ba89c54fb2fcf18a2f5967.js",
     "service-worker.js": "/test-for-mango/service-worker.js",
-    "static/css/main.8914190a.chunk.css.map": "/test-for-mango/static/css/main.8914190a.chunk.css.map",
-    "static/js/2.c84eb308.chunk.js.LICENSE.txt": "/test-for-mango/static/js/2.c84eb308.chunk.js.LICENSE.txt"
+    "static/css/main.39c5e9cf.chunk.css.map": "/test-for-mango/static/css/main.39c5e9cf.chunk.css.map",
+    "static/js/2.37b03819.chunk.js.LICENSE.txt": "/test-for-mango/static/js/2.37b03819.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c638598e.js",
-    "static/js/2.c84eb308.chunk.js",
-    "static/css/main.8914190a.chunk.css",
-    "static/js/main.387bd256.chunk.js"
+    "static/js/runtime-main.3942ba13.js",
+    "static/js/2.37b03819.chunk.js",
+    "static/css/main.39c5e9cf.chunk.css",
+    "static/js/main.5228240b.chunk.js"
   ]
 }
