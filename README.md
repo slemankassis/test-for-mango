@@ -26,12 +26,14 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Suggestions for IDE VSCode
+## Suggestions
 
-- https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3
+- NVM autoselecting of version with `.nvmrc` file https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3
 
 
--<img width="1792" alt="Screenshot 2021-10-07 at 1 29 45 PM" src="https://user-images.githubusercontent.com/5224903/136384876-1db05833-9aaa-42a8-a35d-27ba91236f43.png">
+- Editor Config extension for IDE VSCode https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig with `.editorconfig` file
+
+<img width="1792" alt="Screenshot 2021-10-07 at 1 29 45 PM" src="https://user-images.githubusercontent.com/5224903/136384876-1db05833-9aaa-42a8-a35d-27ba91236f43.png">
 
 
 ## Mock URL "mockable.io"
