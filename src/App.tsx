@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
-import { store } from './store/store';
 import { Provider } from 'react-redux';
+
+import { store } from './store/store';
 import Exercise1 from './components/Exercise1';
 import Exercise2 from './components/Exercise2';
+
+import './App.css';
 
 function App() {
   // TODO: Github pages always shows 404. Fix it. https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c

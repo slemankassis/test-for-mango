@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 import Range from '../components/Range/Range';
 import AlertMessage from '../components/AlertMessage/AlertMessage';
@@ -8,6 +9,8 @@ import { loadExercise1Options } from '../exercises/store/exercise1/slice';
 import { CURRENCY_SYMBOL } from '../misc/constants';
 
 const Exercise1: FC = () => {
+  const { t } = useTranslation();
+
   const [rangeSelected, setRangeSelected] = useState<{
     min: number;
     max: number;
@@ -42,7 +45,7 @@ const Exercise1: FC = () => {
 
       {rangeSelected !== undefined && (
         <p>
-          Selected values: {rangeSelected?.min} - {rangeSelected?.max}
+          Values: {rangeSelected?.min} - {rangeSelected?.max}
         </p>
       )}
     </div>

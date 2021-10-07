@@ -42,7 +42,7 @@ const Exercise2: FC = () => {
 
       {rangeSelected !== undefined && (
         <p>
-          Selected values: {rangeSelected?.min} - {rangeSelected?.max}
+          Values: {rangeSelected?.min} - {rangeSelected?.max}
         </p>
       )}
     </div>
